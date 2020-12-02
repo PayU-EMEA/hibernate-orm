@@ -24,11 +24,21 @@ jobs:
         java-version: 1.8
     
     - name: Build with Maven
-      run: mvn -B package
+      run: mvn -B -V package
     
-    - name: Upload artifacts
+    - name: Upload built-jars
       uses: actions/upload-artifact@v2
       with:
-        name: artifacts
+        name: built-jars
         path: '**/target/*.jar'
-      
+
+    - name: Upload tests reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: tests-reports
+        path: '**/target/surefire-reports/*.xml'
+
+    - name: Publish Test Report
+      uses: scacap/action-surefire-report@v1
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}

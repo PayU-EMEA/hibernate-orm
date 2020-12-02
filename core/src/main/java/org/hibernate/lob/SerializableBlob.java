@@ -86,4 +86,12 @@ public class SerializableBlob implements Serializable, Blob {
 		getWrappedBlob().truncate(len);
 	}
 
+	public void free() throws SQLException {
+		getWrappedBlob().free();
+	}
+
+	public InputStream getBinaryStream(long pos, long length) throws SQLException {
+		return getWrappedBlob().getBinaryStream(pos, length);
+	}
+
 }

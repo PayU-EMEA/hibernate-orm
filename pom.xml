@@ -48,7 +48,8 @@
         <module>core</module>
         <module>cache-ehcache</module>
         <module>cache-jbosscache</module>
-        <module>cache-jbosscache2</module>
+        <!-- has snapshot on dependencies ... -->
+<!--        <module>cache-jbosscache2</module>-->
         <module>cache-oscache</module>
         <module>cache-swarmcache</module>
         <module>connection-c3p0</module>
@@ -77,20 +78,20 @@
         </plugins>
     </build>
 
-    <profiles>
-        <profile>
-            <id>docs</id>
-            <activation>
-                <property>
-                    <name>disableDistribution</name>
-                    <value>!true</value>
-                </property>
-            </activation>
-            <modules>
-                <module>documentation</module>
-                <module>distribution</module>
-            </modules>
-        </profile>
-    </profiles>
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>docs</id>-->
+<!--            <activation>-->
+<!--                <property>-->
+<!--                    <name>disableDistribution</name>-->
+<!--                    <value>!true</value>-->
+<!--                </property>-->
+<!--            </activation>-->
+<!--            <modules>-->
+<!--                <module>documentation</module>-->
+<!--                <module>distribution</module>-->
+<!--            </modules>-->
+<!--        </profile>-->
+<!--    </profiles>-->
 
 </project>

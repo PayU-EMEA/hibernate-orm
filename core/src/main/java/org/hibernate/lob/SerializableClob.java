@@ -96,4 +96,12 @@ public class SerializableClob implements Serializable, Clob {
 		getWrappedClob().truncate(len);
 	}
 
+	public void free() throws SQLException {
+		getWrappedClob().free();
+	}
+
+	public Reader getCharacterStream(long pos, long length) throws SQLException {
+		return getWrappedClob().getCharacterStream(pos, length);
+	}
+
 }

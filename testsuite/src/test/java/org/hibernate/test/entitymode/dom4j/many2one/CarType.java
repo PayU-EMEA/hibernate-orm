@@ -1,7 +1,7 @@
 package org.hibernate.test.entitymode.dom4j.many2one;
 
 /**
- * @author Paco Hern·ndez
+ * @author Paco Hern√°ndez
  */
 public class CarType implements java.io.Serializable {
 

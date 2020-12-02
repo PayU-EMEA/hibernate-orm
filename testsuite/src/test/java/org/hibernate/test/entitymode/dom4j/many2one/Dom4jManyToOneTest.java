@@ -14,7 +14,7 @@ import org.hibernate.junit.functional.FunctionalTestCase;
 import org.hibernate.junit.functional.FunctionalTestClassTestSuite;
 
 /**
- * @author Paco Hern·ndez
+ * @author Paco Hern√°ndez
  */
 public class Dom4jManyToOneTest extends FunctionalTestCase {
 

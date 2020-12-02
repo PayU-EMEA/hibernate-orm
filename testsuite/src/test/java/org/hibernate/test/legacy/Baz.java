@@ -321,6 +321,9 @@ public class Baz implements Named, Serializable, Comparable {
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
 	public int compareTo(Object o) {
+		if ( ((Baz)o).code == null && code == null ) {
+			return 0;
+		}
 		return ( (Baz) o ).code.compareTo(code);
 	}
 

@@ -141,8 +141,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.4</source>
-                    <target>1.4</target>
+                    <source>1.5</source>
+                    <target>1.5</target>
                 </configuration>
             </plugin>
             <!-- add specification/implementation details to the manifests -->
@@ -357,5 +357,16 @@
             <url>dav:https://snapshots.jboss.org/maven2</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>jboss-developer</id>
+            <url>https://repository.jboss.org/nexus/content/groups/developer/</url>
+        </repository>
+        <repository>
+            <id>redhat-ga</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
+        </repository>
+    </repositories>
 
 </project>
