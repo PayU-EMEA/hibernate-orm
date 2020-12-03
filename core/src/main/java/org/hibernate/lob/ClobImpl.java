@@ -68,6 +68,15 @@ public class ClobImpl implements Clob {
 		excep();
 	}
 
+	public void free() throws SQLException {
+		excep();
+	}
+
+	public Reader getCharacterStream(long pos, long length) throws SQLException {
+		excep();
+		return null;
+	}
+
 	/**
 	 * @see java.sql.Clob#getAsciiStream()
 	 */

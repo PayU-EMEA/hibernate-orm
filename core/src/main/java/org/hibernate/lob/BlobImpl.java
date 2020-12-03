@@ -66,6 +66,15 @@ public class BlobImpl implements Blob {
 		excep();
 	}
 
+	public void free() throws SQLException {
+		excep();
+	}
+
+	public InputStream getBinaryStream(long pos, long length) throws SQLException {
+		excep();
+		return null;
+	}
+
 	/**
 	 * @see java.sql.Blob#getBytes(long, int)
 	 */

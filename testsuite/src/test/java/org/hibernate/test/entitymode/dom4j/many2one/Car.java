@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author Paco Hern·ndez
+ * @author Paco Hern√°ndez
  */
 public class Car implements java.io.Serializable {
 
