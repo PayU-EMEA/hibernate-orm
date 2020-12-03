@@ -32,7 +32,7 @@
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-parent</artifactId>
     <packaging>pom</packaging>
-    <version>3.3.1.GA</version>
+    <version>3.3.1.GA-PAYU1</version>
 
     <name>Hibernate Core Parent POM</name>
     <description>The base POM for all Hibernate Core modules.</description>

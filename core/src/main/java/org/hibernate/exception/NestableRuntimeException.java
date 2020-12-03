@@ -100,8 +100,8 @@ public class NestableRuntimeException extends RuntimeException implements Nestab
 		this.cause = cause;
 	}
 
-	public Throwable getCause() {
-		return cause;
+	public final Throwable getCause() {
+		return cause == this ? null : cause;
 	}
 
 	/**
