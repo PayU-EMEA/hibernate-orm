@@ -48,8 +48,7 @@
         <module>core</module>
         <module>cache-ehcache</module>
         <module>cache-jbosscache</module>
-        <!-- has snapshot on dependencies ... -->
-<!--        <module>cache-jbosscache2</module>-->
+        <module>cache-jbosscache2</module>
         <module>cache-oscache</module>
         <module>cache-swarmcache</module>
         <module>connection-c3p0</module>
