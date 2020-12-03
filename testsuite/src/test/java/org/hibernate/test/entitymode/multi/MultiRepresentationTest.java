@@ -45,8 +45,8 @@ public class MultiRepresentationTest extends FunctionalTestCase {
 		Session session = openSession();
 		Transaction txn = session.beginTransaction();
 
-		Stock stock = ( Stock ) session.get( Stock.class, new Long( 1 ) );
-		assertEquals( "Something wrong!", new Long( 1 ), stock.getId() );
+		Stock stock = ( Stock ) session.get( Stock.class, testData.stockId );
+		assertEquals( "Something wrong!", testData.stockId, stock.getId() );
 
 		txn.commit();
 		session.close();
